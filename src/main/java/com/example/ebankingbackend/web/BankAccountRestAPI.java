@@ -1,16 +1,15 @@
 package com.example.ebankingbackend.web;
 
 import com.example.ebankingbackend.dtos.*;
-import com.example.ebankingbackend.entities.Customer;
 import com.example.ebankingbackend.exception.BalanceNotSufficientException;
 import com.example.ebankingbackend.exception.BankAccountNotFoundException;
 import com.example.ebankingbackend.services.BankAccountService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 @RestController
+@CrossOrigin("*")
 public class BankAccountRestAPI {
     private BankAccountService bankAccountService;
 

@@ -1,7 +1,6 @@
 package com.example.ebankingbackend.web;
 
 import com.example.ebankingbackend.dtos.CustomerDTO;
-import com.example.ebankingbackend.entities.Customer;
 import com.example.ebankingbackend.exception.CustomerNotFoundException;
 import com.example.ebankingbackend.services.BankAccountService;
 import lombok.AllArgsConstructor;
@@ -13,6 +12,7 @@ import java.util.List;
 @RestController
 @AllArgsConstructor
 @Slf4j
+@CrossOrigin("*")
 public class CustomerRestController {
     private BankAccountService bankAccountService;
 
